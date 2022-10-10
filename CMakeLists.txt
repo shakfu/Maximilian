@@ -15,7 +15,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 include_directories(${INCLUDE})
 include_directories(${INCLUDE_LIBS})
 
-add_subdirectory(examples/advance_filters)
+add_subdirectory(examples/advanced_filters)
 add_subdirectory(examples/am1)
 add_subdirectory(examples/am2)
 add_subdirectory(examples/compressor)
