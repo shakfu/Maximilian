@@ -7,6 +7,10 @@
 ```
 ![version](https://img.shields.io/badge/version-2.4-red)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/mimic-sussex/eppEditor/blob/master/LICENSE)
+[docs][https://mimicproject.com/guides/maximJS]
+
+This is a fork of a subset of Maximilian with a focus on cmake compilation on
+linux and raspberry pi, and macOS (still not active to be added later).
 
 <br />
 
@@ -83,4 +87,12 @@ You can install the ofxMaxim addon by copying the ofxMaxim/ofxMaxim folder into 
 
 Important: when using Maximilian on OSX, link against the Accelerate framework.
 
+### CMAKE
+
+mkdir build
+cd build
+
+cmake .. -DLINUX=ON
+
+the cmake file needs updating for osx
 
