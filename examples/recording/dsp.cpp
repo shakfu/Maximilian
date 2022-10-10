@@ -11,15 +11,16 @@ maxiOsc osc;
 maxiOsc ramp;
 
 // We declare our recorder object here, which will call it's
-// default constructor. 
+// default constructor.
 maxiRecorder recorder;
 
-void setup() {
+void setup()
+{
 
     // Call setup here, make sure you do this so the recorder
     // knows where to write the file. Currently the recorder
     // will write the wav file to the directory that this file
-    // is in if you use linux but with mac and windows I 
+    // is in if you use linux but with mac and windows I
     // strongly reccomend putting an absolute file path to the
     // directory you want to write to. Also, when in Windows,
     // remember to do double '\' characters because they
@@ -31,18 +32,19 @@ void setup() {
     recorder.startRecording();
 }
 
-void play(double *output) {
-    
+void play(double* output)
+{
+
     // A pulse wave!!! Yay
     out = osc.pulse(90, ramp.phasor(.2));
-    
+
     // Fill our output buffer
-    output[0]=out;
-    output[1]=out;
+    output[0] = out;
+    output[1] = out;
 
     // After we have filled our output array, send the array
     // and the size of the array (in this case the amount of
-    // channels, but in ofx or juce you might need to do 
+    // channels, but in ofx or juce you might need to do
     // something like channels*bufferSize).
     recorder.passData(output, maxiSettings::channels);
 }
@@ -53,5 +55,3 @@ void play(double *output) {
 // will be written for you. If you would like to do something
 // more dynamic, look at the class definition in maximilian.h -
 // the api allows for stricter control of the object.
-
-
