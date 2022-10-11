@@ -7,6 +7,7 @@ add_executable(${PARENT}
     dsp.cpp
     ${SRC}/player.cpp
     ${SRC}/RtAudio.cpp
+    ${INCLUDE_LIBS}/maxiClock.cpp
     ${INCLUDE}/maximilian.cpp)
 
 target_compile_options(${PARENT} PUBLIC -Wall)
