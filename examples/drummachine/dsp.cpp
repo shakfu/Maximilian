@@ -21,14 +21,12 @@ void setup()
 
     // YOU HAVE TO PROVIDE THE SAMPLES....
 
-    kick.load(
-        "/Users/yourusername/somewhere/kick.wav"); // load in your samples.
-                                                   // Provide the full path to
-                                                   // a wav file.
-    snare.load(
-        "/Users/yourusername/somewhere/snare.wav"); // load in your samples.
-                                                    // Provide the full path to
-                                                    // a wav file.
+    kick.load("media/kick.wav"); // load in your samples.
+                                 // Provide the full path to
+                                 // a wav file.
+    snare.load("media/snare.wav"); // load in your samples.
+                                   // Provide the full path to
+                                   // a wav file.
 
 
     printf("Summary:\n%s",

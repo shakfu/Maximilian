@@ -15,8 +15,12 @@ void setup()
 void play(double* output)
 {
 
-    CurrentCount = myCounter.phasor(
-        1, 1, 9); // phasor can take three arguments; frequency, start value
+    // CurrentCount = myCounter.phasor(
+    //     1, 1, 9); // phasor can take three arguments; frequency, start value
+    //               // and end value.
+
+    CurrentCount = myCounter.phasorBetween(
+        1., 1. 9.); // phasor can take three arguments; frequency, start value
                   // and end value.
 
     // here we use a conditional to make something happen at a specific time.

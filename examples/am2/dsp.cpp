@@ -25,7 +25,8 @@ void play(double* output)
     // original waves. So you hear two new waves, one going up, one going down.
 
     output[0] = mySine.sinewave(440) * myOtherSine.sinewave(
-        myPhasor.phasor(440);
+        // myPhasor.phasor(440)
+        myPhasor.phasorBetween(440., 0., 0.01)
         // myPhasor.phasor(0.01, 0, 440); // <- signature doesn't exist
     );
     output[1] = output[0];

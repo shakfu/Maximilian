@@ -23,12 +23,10 @@ void setup()
 
     // YOU HAVE TO PROVIDE THE SAMPLES....
 
-    sound1.load(
-        "/Users/mickgrierson/Documents/audio/"
-        "68373__juskiddink__Cello_open_string_bowed.wav"); // load in your
-                                                           // samples. Provide
-                                                           // the full path to
-                                                           // a wav file.
+    sound1.load("media/blip.wav"); // load in your
+                                   // samples. Provide
+                                   // the full path to
+                                   // a wav file.
 
 
     printf("Summary:\n%s",

@@ -25,7 +25,7 @@ void setup()
     // directory you want to write to. Also, when in Windows,
     // remember to do double '\' characters because they
     // count as an escape which will nullify any path you write
-    recorder.setup("lovesong.wav");
+    recorder.setup("media/lovesong.wav");
 
     // This must be called to start the asynchronous thread to
     // manage the recorder's internal memory

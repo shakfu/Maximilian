@@ -30,8 +30,11 @@ void play(double* output)
     // resets itself. When it reaches 9 it resets, so the values you get are
     // 1-8.
 
-    CurrentCount = myCounter.phasor(
-        1, 1, 9); // phasor can take three arguments; frequency, start value
+    // CurrentCount = myCounter.phasor(
+    //     1, 1, 9); // phasor can take three arguments; frequency, start value
+    //               // and end value.
+    CurrentCount = myCounter.phasorBetween(
+        1., 1., 9.); // phasor can take three arguments; frequency, start value
                   // and end value.
 
     // If we multiply the output of CurrentCount by 100, we get
